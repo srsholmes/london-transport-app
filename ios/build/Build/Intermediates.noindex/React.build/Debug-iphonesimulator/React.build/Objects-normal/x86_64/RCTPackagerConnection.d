@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/DevSupport/RCTPackagerConnection.m \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/cabbio540/Sites/personal/TransportApp/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/cabbio540/Sites/personal/TransportApp/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/cabbio540/Sites/personal/TransportApp/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/../Libraries/WebSocket/RCTReconnectingWebSocket.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/../Libraries/WebSocket/RCTSRWebSocket.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/Base/RCTWebSocketObserverProtocol.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/DevSupport/RCTPackagerConnectionBridgeConfig.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/DevSupport/RCTPackagerConnectionConfig.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/DevSupport/RCTReloadPackagerMethod.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/cabbio540/Sites/personal/TransportApp/node_modules/react-native/React/DevSupport/RCTSamplingProfilerPackagerMethod.h

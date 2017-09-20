@@ -1,0 +1,38 @@
+{
+  "name": "TransportApp",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "jest-expo": "~20.0.0",
+    "react-test-renderer": "16.0.0-alpha.12",
+    "remote-redux-devtools": "^0.5.0",
+    "remote-redux-devtools-on-debugger": "^0.7.0",
+    "remotedev-server": "^0.1.2"
+  },
+  "scripts": {
+    "start": "npm run dev:ios && npm run devtools",
+    "dev:ios": "NODE_ENV=development react-native run-ios",
+    "dev:android": "NODE_ENV=development react-native run-android",
+    "devtools": "remotedev-debugger --hostname localhost --port 5678 --injectserver --runserver",
+    "postinstall": "remotedev-debugger",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "node node_modules/jest/bin/jest.js --watch",
+    "flow": "node_modules/.bin/flow",
+    "flow-stop": "flow stop",
+    "newclear": "rm -rf $TMPDIR/react-* && watchman watch-del-all && rm -rf ios/build/ModuleCache/* && rm -rf node_modules/ && yarn cache clean && yarn install"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "flow-bin": "0.49.1",
+    "react": "16.0.0-alpha.12",
+    "react-native": "^0.47.0",
+    "react-navigation": "^1.0.0-beta.11",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  }
+}
