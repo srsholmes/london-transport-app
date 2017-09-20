@@ -1,16 +1,23 @@
 // @flow
-import React from 'react';
+import React, { Component } from 'react';
+import { View } from 'react-native';
 import { Provider } from 'react-redux';
-import Transport from './app/containers/Transport';
 import configureStore from './app/store';
+import MainStackRouter from './app/routers/main';
+import NavigationBar from 'react-native-navbar';
 
 const store = configureStore({});
 
-export default class App extends React.Component {
+export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Transport/>
+        <View style={{ flex: 1 }}>
+          <NavigationBar
+            title={{ title: 'London Transport App' }}
+          />
+          <MainStackRouter/>
+        </View>
       </Provider>
     );
   }
