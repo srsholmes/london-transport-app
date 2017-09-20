@@ -3,19 +3,21 @@ import React, { Component, } from 'react';
 import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { fetchLines } from '../actions';
+import { getLineInfo } from '../actions';
 import LinesList from '../components/LinesList';
 
 class LineInfo extends Component {
   componentDidMount() {
-    console.log('Get line ifno ');
+    const { params } = this.props.navigation.state;
+    getLineInfo(params.line.id);
   }
 
   render() {
-    const { tflLines } = this.props;
+    const { params } = this.props.navigation.state;
     return (
       <View style={styles.container}>
-        <Text>Line Info Page</Text>
+        <Text>{params.line.name} Line</Text>
+        <Text>{params.line.id}</Text>
       </View>
     );
   }
@@ -23,16 +25,13 @@ class LineInfo extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#fff',
-    flexDirection: 'column',
-  },
-  loader: {
     paddingTop: 20,
+    flexDirection: 'column',
   },
 });
 
-const mapDispatchToProps = dispatch => ({ actions: bindActionCreators({ fetchLines }, dispatch) });
+const mapDispatchToProps = dispatch => ({ actions: bindActionCreators({ getLineInfo }, dispatch) });
 const mapStateToProps = state => ({ ...state });
 
 export default connect(mapStateToProps, mapDispatchToProps)(LineInfo);

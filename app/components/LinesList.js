@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { FlatList, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 
 const ListItem = props => {
-  console.log(props);
   const { nav } = props;
   return (
-    <View onPress={() => nav.navigate('LineInfo')}>
+    <TouchableOpacity onPress={() => nav.navigate('LineInfo', { line: props.item })}>
       <Text style={styles.item}>{props.item.key}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 

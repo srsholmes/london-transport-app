@@ -9,3 +9,10 @@ export const fetchLines = () => {
     dispatch({ type: 'SET_TFL_LINES', lines: data });
   };
 };
+
+export const getLineInfo = id => {
+  return async dispatch => {
+    console.log('Get line info')
+    dispatch({ type: 'SET_TFL_LINE_INFO', line: data });
+  };
+};

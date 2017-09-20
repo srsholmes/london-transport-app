@@ -2,85 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e286dd6a-928a-47d0-8270-8dfa6bb7b13f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/Logs/Build/511D8236-8A83-4388-B22A-AB0F1995E1C9.xcactivitylog" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/Logs/Build/7A1F9971-F112-4D9C-B502-F7AE1D5B5422.xcactivitylog" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/containers/Transport.js" afterPath="$PROJECT_DIR$/app/containers/Home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTActionSheet.build/Debug-iphonesimulator/RCTActionSheet.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTActionSheet.build/Debug-iphonesimulator/RCTActionSheet.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTAnimation.build/Debug-iphonesimulator/RCTAnimation.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTAnimation.build/Debug-iphonesimulator/RCTAnimation.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTGeolocation.build/Debug-iphonesimulator/RCTGeolocation.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTGeolocation.build/Debug-iphonesimulator/RCTGeolocation.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTImage.build/Debug-iphonesimulator/RCTImage.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTImage.build/Debug-iphonesimulator/RCTImage.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTLinking.build/Debug-iphonesimulator/RCTLinking.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTLinking.build/Debug-iphonesimulator/RCTLinking.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTNetwork.build/Debug-iphonesimulator/RCTNetwork.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTNetwork.build/Debug-iphonesimulator/RCTNetwork.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTSettings.build/Debug-iphonesimulator/RCTSettings.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTSettings.build/Debug-iphonesimulator/RCTSettings.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTText.build/Debug-iphonesimulator/RCTText.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTText.build/Debug-iphonesimulator/RCTText.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTVibration.build/Debug-iphonesimulator/RCTVibration.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTVibration.build/Debug-iphonesimulator/RCTVibration.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTWebSocket.build/Debug-iphonesimulator/RCTWebSocket.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/RCTWebSocket.build/Debug-iphonesimulator/RCTWebSocket.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/cxxreact.build/Objects-normal/x86_64/SampleCxxModule.o" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/cxxreact.build/Objects-normal/x86_64/SampleCxxModule.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/cxxreact.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/cxxreact.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/double-conversion.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/double-conversion.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/jschelpers.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/jschelpers.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/third-party.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/third-party.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/third-party.build/third-party.hmap" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/third-party.build/third-party.hmap" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/yoga.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/yoga.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/ReactNativeConfig.build/Debug-iphonesimulator/ReactNativeConfig.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/ReactNativeConfig.build/Debug-iphonesimulator/ReactNativeConfig.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/TransportApp.build/Debug-iphonesimulator/TransportApp.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/TransportApp.build/Debug-iphonesimulator/TransportApp.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/TransportApp.build/Debug-iphonesimulator/TransportAppTests.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates.noindex/TransportApp.build/Debug-iphonesimulator/TransportAppTests.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/TransportApp.app/PlugIns/TransportAppTests.xctest/TransportAppTests" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/TransportApp.app/PlugIns/TransportAppTests.xctest/TransportAppTests" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/TransportApp.app/TransportApp" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/TransportApp.app/TransportApp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libReact.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libReact.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libReactNativeConfig.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libReactNativeConfig.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libcxxreact.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libcxxreact.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libjschelpers.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libjschelpers.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libthird-party.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libthird-party.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/Conv.o-1K3IT2LJ0VKX6" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/Conv.o-1K3IT2LJ0VKX6" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/CxxNativeModule.o-2DTL80CLSRUQX" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/CxxNativeModule.o-2DTL80CLSRUQX" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/Instance.o-3CV3KQ66L2OI8" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/Instance.o-3CV3KQ66L2OI8" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSBigString.o-1S7MC5CWQ15PE" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSBigString.o-1S7MC5CWQ15PE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSBundleType.o-16OYWW33C19L1" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSBundleType.o-16OYWW33C19L1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSCExecutor.o-2TZ824NS9Z6R7" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSCExecutor.o-2TZ824NS9Z6R7" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSCHelpers.o-1SHO0JUL9Q7I9" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSCHelpers.o-1SHO0JUL9Q7I9" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSCNativeModules.o-9LYR9FDTMAIN" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSCNativeModules.o-9LYR9FDTMAIN" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSCSamplingProfiler.o-8HE7YS7EQ6I9" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSCSamplingProfiler.o-8HE7YS7EQ6I9" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSCUtils.o-IPBC7PWF3OJ3" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSCUtils.o-IPBC7PWF3OJ3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSCWrapper.o-PX2H9E3RO5P8" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSCWrapper.o-PX2H9E3RO5P8" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSIndexedRAMBundle.o-3MCXBZA65QD7N" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/JSIndexedRAMBundle.o-3MCXBZA65QD7N" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/MethodCall.o-35BASK8ZPE44K" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/MethodCall.o-35BASK8ZPE44K" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/ModuleRegistry.o-3Q5UQDBVQDTLW" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/ModuleRegistry.o-3Q5UQDBVQDTLW" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/NSDataBigString.o-25PH0YK5ZFV2" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/NSDataBigString.o-25PH0YK5ZFV2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/NativeToJsBridge.o-1SJXU84OE5GUZ" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/NativeToJsBridge.o-1SJXU84OE5GUZ" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/Platform.o-2CFQAZ69DS3I3" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/Platform.o-2CFQAZ69DS3I3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTCxxBridge.o-3SYXQ0MQU6BZL" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTCxxBridge.o-3SYXQ0MQU6BZL" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTCxxMethod.o-2YY708B6FPBDL" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTCxxMethod.o-2YY708B6FPBDL" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTCxxModule.o-283XZT2RP73D5" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTCxxModule.o-283XZT2RP73D5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTCxxUtils.o-2MW601E2UOS2B" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTCxxUtils.o-2MW601E2UOS2B" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTFollyConvert.o-D8JUMPMS3OVV" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTFollyConvert.o-D8JUMPMS3OVV" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTJSCHelpers.o-35WABJDEOZQWW" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTJSCHelpers.o-35WABJDEOZQWW" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTMessageThread.o-3S9RMRRJWAWRK" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTMessageThread.o-3S9RMRRJWAWRK" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTNativeModule.o-4ST1X6R064EN" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTNativeModule.o-4ST1X6R064EN" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTObjcExecutor.o-35BKFE0ER8RK" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/RCTObjcExecutor.o-35BKFE0ER8RK" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/ReactNativeConfig.o-LNQQCSYDMXA4" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/ReactNativeConfig.o-LNQQCSYDMXA4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/SampleCxxModule.o-19EE5UDHMQEU6" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/SampleCxxModule.o-19EE5UDHMQEU6" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/StringBase.o-1NLUZZ8BC5FXR" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/StringBase.o-1NLUZZ8BC5FXR" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/Value.o-3P2H6ACEOX5L0" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/Value.o-3P2H6ACEOX5L0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/demangle-7B942820D95A2665.o-1ZJAH62PH9YSI" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/demangle-7B942820D95A2665.o-1ZJAH62PH9YSI" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/dynamic.o-2NY7123IFT0D6" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/dynamic.o-2NY7123IFT0D6" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/json.o-Q8GLX4VCVB4L" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/json.o-Q8GLX4VCVB4L" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/logging.o-2FBVNF3VSQT62" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/logging.o-2FBVNF3VSQT62" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/raw_logging.o-FIW9L08J8UDJ" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/raw_logging.o-FIW9L08J8UDJ" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/signalhandler.o-PD1WFTSEWTX0" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/signalhandler.o-PD1WFTSEWTX0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/symbolize.o-1ICC4T4HPTPPC" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/symbolize.o-1ICC4T4HPTPPC" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/utilities.o-1S14BPM1NJ60W" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/utilities.o-1S14BPM1NJ60W" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/vlog_is_on.o-38JRJHDIBRN9T" afterPath="$PROJECT_DIR$/ios/build/Index/DataStore/v5/units/vlog_is_on.o-38JRJHDIBRN9T" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Logs/Build/Cache.db" afterPath="$PROJECT_DIR$/ios/build/Logs/Build/Cache.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/reducers/hello.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App.js" afterPath="$PROJECT_DIR$/App.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/index.js" afterPath="$PROJECT_DIR$/app/actions/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/LinesList.js" afterPath="$PROJECT_DIR$/app/components/LinesList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/info.plist" afterPath="$PROJECT_DIR$/ios/build/info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/containers/LineInfo.js" afterPath="$PROJECT_DIR$/app/containers/LineInfo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reducers/index.js" afterPath="$PROJECT_DIR$/app/reducers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routers/main.js" afterPath="$PROJECT_DIR$/app/routers/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -103,8 +31,18 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="48" lean-forward="false" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+            <state relative-caret-position="85">
+              <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/reducers/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -113,8 +51,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -123,28 +61,18 @@
       <file leaf-file-name="LineInfo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/containers/LineInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="47" lean-forward="false" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+            <state relative-caret-position="272">
+              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/Home.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/reducers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            <state relative-caret-position="68">
+              <caret line="4" column="56" lean-forward="true" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -153,8 +81,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/actions/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+            <state relative-caret-position="238">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -163,8 +91,8 @@
       <file leaf-file-name="LinesList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/LinesList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="47" />
+            <state relative-caret-position="68">
+              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -175,6 +103,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>accessibilityInfor</find>
+      <find>.type</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,19 +121,22 @@
         <option value="$PROJECT_DIR$/app/utils/index.js" />
         <option value="$PROJECT_DIR$/app/reducers/tfl-lines.js" />
         <option value="$PROJECT_DIR$/app/utils/tflGetLineStatus.js" />
-        <option value="$PROJECT_DIR$/app/reducers/index.js" />
         <option value="$PROJECT_DIR$/app/reducers/tflLines.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/reducers/hello.js" />
-        <option value="$PROJECT_DIR$/app/actions/index.js" />
         <option value="$PROJECT_DIR$/app/themes/index.js" />
         <option value="$PROJECT_DIR$/app/containers/Transport.js" />
-        <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/app/containers/Home.js" />
-        <option value="$PROJECT_DIR$/app/components/LinesList.js" />
-        <option value="$PROJECT_DIR$/app/containers/LineInfo.js" />
-        <option value="$PROJECT_DIR$/app/routers/main.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/actions/index.js" />
+        <option value="$PROJECT_DIR$/app/reducers/tflLineInfo.js" />
+        <option value="$PROJECT_DIR$/app/containers/LineInfo.js" />
+        <option value="$PROJECT_DIR$/app/reducers/navigation.js" />
+        <option value="$PROJECT_DIR$/App.js" />
+        <option value="$PROJECT_DIR$/app/reducers/index.js" />
+        <option value="$PROJECT_DIR$/app/routers/main.js" />
+        <option value="$PROJECT_DIR$/app/components/LinesList.js" />
+        <option value="$PROJECT_DIR$/app/reducers/router.js" />
       </list>
     </option>
   </component>
@@ -308,13 +240,31 @@
               <item name="TransportApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="TransportApp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportApp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TransportApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="TransportApp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportApp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="routers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TransportApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TransportApp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TransportApp" type="b2602c69:ProjectViewProjectNode" />
@@ -355,8 +305,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/containers" />
       <recent name="$PROJECT_DIR$/app/reducers" />
+      <recent name="$PROJECT_DIR$/app/containers" />
       <recent name="$PROJECT_DIR$/app/utils" />
     </key>
   </component>
@@ -392,15 +342,16 @@
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17222223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17222223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Notes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -409,7 +360,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -543,14 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/utils/tflGetLineStatus.js" />
     <entry file="file://$PROJECT_DIR$/app/utils/json.js" />
     <entry file="file://$PROJECT_DIR$/app/utils/status.js" />
@@ -573,26 +515,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="88" lean-forward="false" selection-start-line="6" selection-start-column="88" selection-end-line="6" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/utils/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/reducers/hello.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="53" lean-forward="false" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -605,22 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="48" lean-forward="false" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/actions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/themes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -629,26 +539,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/LinesList.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="47" />
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/LineInfo.js">
+    <entry file="file://$PROJECT_DIR$/app/reducers/hello.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="47" lean-forward="false" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routers/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="53" lean-forward="false" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -661,10 +563,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js_2.flow">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reducers/tflLineInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/LinesList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/LineInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="56" lean-forward="true" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reducers/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
           <folding />
         </state>
       </provider>
