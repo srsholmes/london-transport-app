@@ -10,7 +10,7 @@ export const sortReducers = red =>
 const reducers = {
   tflLines,
   tflLineInfo,
-  router,
+  nav: router,
 };
 
 export default function createReducer(asyncReducers) {

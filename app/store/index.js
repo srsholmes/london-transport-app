@@ -2,7 +2,8 @@ import { composeWithDevTools } from 'remote-redux-devtools';
 import thunk from 'redux-thunk';
 import { applyMiddleware, createStore } from 'redux';
 import createReducer from '../reducers';
-import storage from '../utils/storage'
+import storage from '../middleware/storage'
+import promise from '../middleware/promise';
 
 const composeEnhancers = composeWithDevTools({
   realtime: true,
@@ -15,7 +16,7 @@ export default function configureStore(initialState = {}): any {
     createReducer(),
     initialState,
     composeEnhancers(
-      applyMiddleware(thunk),
+      applyMiddleware(thunk, promise),
       //storage(), // Saves the state to the phone, on every action. Useful for starting the app in the same state as before if needed.
     ),
   );

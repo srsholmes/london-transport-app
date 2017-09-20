@@ -8,12 +8,17 @@ import LinesList from '../components/LinesList';
 
 class LineInfo extends Component {
   componentDidMount() {
+    console.log('LineInfo', this.props);
     const { params } = this.props.navigation.state;
     getLineInfo(params.line.id);
   }
 
   render() {
-    const { params } = this.props.navigation.state;
+    console.log('LineInfo', this.props);
+    const { nav } = this.props;
+    const { index } = nav;
+    const { params } = nav.routes[ index ];
+
     return (
       <View style={styles.container}>
         <Text>{params.line.name} Line</Text>

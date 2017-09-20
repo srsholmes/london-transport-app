@@ -13,6 +13,7 @@ const navigateHandler = dir => ({
   handler: () => {
     const state = store.getState();
     console.log('State', state);
+    // TODO: Do the map here on the routes to hide / show the different nav bar buttons.
     alert('hello!');
   },
 });
