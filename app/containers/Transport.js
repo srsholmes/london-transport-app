@@ -1,23 +1,28 @@
 // @flow
 import React, { Component, } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { hello } from '../actions';
-
-function multiply(n1: number, n2: number): number {
-  return n1 * n2;
-}
+import { fetchLines } from '../actions';
+import LinesList from '../components/LinesList';
 
 class App extends Component {
+  componentDidMount() {
+    const { fetchLines } = this.props.actions;
+    fetchLines();
+  }
+
   render() {
-    const { hello } = this.props.actions;
-    console.log('Transport Props')
-    console.log(this.props)
+    const { tflLines } = this.props;
+    console.log(this.props);
     return (
       <View style={styles.container}>
-        <Text onPress={hello}>{multiply(2882, 14)}</Text>
         <Text>{this.props.hello}</Text>
+        {
+          tflLines.length
+            ? <LinesList {...this.props}/>
+            : <ActivityIndicator/>
+        }
       </View>
     );
   }
@@ -32,7 +37,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const mapDispatchToProps = dispatch => ({ actions: bindActionCreators({ hello }, dispatch) });
+const mapDispatchToProps = dispatch => ({ actions: bindActionCreators({ fetchLines }, dispatch) });
 const mapStateToProps = state => ({ ...state });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

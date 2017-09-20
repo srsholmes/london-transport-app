@@ -1,4 +1,4 @@
-export default function hello(state = 'initial Start', action) {
+export default function hello(state = 'London Map App', action) {
   switch (action.type) {
     case 'HELLO':
       return 'Goodbye';
