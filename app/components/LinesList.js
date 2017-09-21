@@ -26,15 +26,32 @@ const ListItem = (props: ListItemProps) => {
     <View style={styles.listItemContainer}>
       <View style={{ width: 20, height: 45, backgroundColor: tflColors[ item.id ] }}/>
       <View style={styles.left}>
-        <TouchableOpacity onPress={() => nav.navigate('LineInfo', { line: props.item })}>
+        <TouchableOpacity
+          accessible={true}
+          accessibilityTraits={'link'}
+          accessibilityLabel={'More line info...'}
+          onPress={() => nav.navigate('LineInfo', { line: props.item })}
+        >
           <Text style={styles.name}>{item.key}</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.right}>
-        <TouchableOpacity style={styles.iconContainer} onPress={() => favouriteLine(item.key)}>
+        <TouchableOpacity
+          accessible={true}
+          accessibilityTraits={'button'}
+          accessibilityLabel={'Add Line to Favourites'}
+          style={styles.iconContainer}
+          onPress={() => favouriteLine(item.key)}
+        >
           <Icon name="star" size={25} color={favouriteLines.includes(item.name) ? '#ffe100' : '#727272'}/>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.iconContainer} onPress={() => nav.navigate('LineInfo', { line: item })}>
+        <TouchableOpacity
+          accessible={true}
+          accessibilityTraits={'link'}
+          accessibilityLabel={'More line info...'}
+          style={styles.iconContainer}
+          onPress={() => nav.navigate('LineInfo', { line: item })}
+        >
           <Icon name="chevron-small-right" size={30} color="#727272"/>
         </TouchableOpacity>
       </View>
@@ -49,7 +66,7 @@ const LinesList = (props: LinesListProps) => {
     ...tflLines.filter(x => favouriteLines.includes(x.name) === false)
   ];
   return (
-    <View>
+    <View accessible={true}>
       <FlatList
         data={lines.map(x => ({ key: x.name, ...x }))}
         ItemSeparatorComponent={() => (<View style={{ height: 1, width: '100%', backgroundColor: '#CED0CE' }}/>)}

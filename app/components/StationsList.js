@@ -30,7 +30,12 @@ type Props = {
 const ListItem = (props: ListItemProps) => {
   const { nav, item } = props;
   return (
-    <TouchableOpacity onPress={() => nav.navigate('StationInfo', { station: item })}>
+    <TouchableOpacity
+      accessible={true}
+      accessibilityTraits={'link'}
+      accessibilityLabel={'See station map location'}
+      onPress={() => nav.navigate('StationInfo', { station: item })}
+    >
       <View style={styles.listItemContainer}>
         <View style={styles.left}>
           <Text style={styles.name}>{item.key}</Text>
@@ -53,8 +58,7 @@ const StationsList = (props: Props) => {
       {stations
         ?
         <FlatList
-          ItemSeparatorComponent={() => (
-            <View style={{ height: 1, width: '100%', backgroundColor: '#CED0CE' }}/>)}
+          ItemSeparatorComponent={() => (<View style={{ height: 1, width: '100%', backgroundColor: '#CED0CE' }}/>)}
           data={stations.map(x => ({ key: x.commonName, ...x }))}
           style={styles.stationList}
           renderItem={x => <ListItem containerStyle={{ borderBottomWidth: 0 }} nav={navigation} {...x}/>}
@@ -65,7 +69,7 @@ const StationsList = (props: Props) => {
           style={styles.button}
           title={`Show ${params.line.name} Line Stations`}
           color="#841584"
-          accessibilityLabel="Learn more about this purple button"
+          accessibilityLabel={`Show ${params.line.name} Line Stations`}
         />
       }
     </View>

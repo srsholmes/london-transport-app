@@ -8,6 +8,9 @@ Run `yarn install` and then `npm start` in terminal.
 ### Troubleshooting
 Run `npm run newclear` to remove React Native's cache and reinstall node-modules. This can often help. 
 
+### Flow
+Run `npm run flow`. The source isn't entirely annotated due to time constraints, but I have gone through the majority of it. 
+
 #### Tests
 Run `npm t`. Tests are run with Jest, which will work both locally and on CI.
 Current only tests for actions are in place due to time constraints. For component testing I would use Enzyme.
