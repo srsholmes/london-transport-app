@@ -6,9 +6,6 @@ import {
   getLineInfo,
 } from './';
 
-const dispatchMock = (args) => {
-  console.log('dispatch Mock', args)
-}
 
 test('favouriteLine', () => {
   expect(favouriteLine('test')).toEqual({ type: 'FAVOURITE_LINE', line: 'test' });
@@ -18,18 +15,23 @@ test('favouriteLine', () => {
   expect(setInitialFavourites('test')).toEqual({ type: 'SET_INITIAL_FAVOURITE_LINES', lines: 'test' });
 });
 
-
 test('getStations', async () => {
-  expect(getStations('test')(dispatchMock)).toEqual({ type: 'FAVOURITE_LINE', line: 'test' });
+  const mockFn = jest.fn();
+  await getStations('test')(mockFn);
+  const calls = mockFn.mock.calls[ 0 ][ 0 ];
+  expect(calls).toEqual({ stations: { data: { test: 'data' }, ok: true }, type: 'SET_TFL_STATIONS' });
 });
 
 test('fetchLines', async () => {
-  expect(fetchLines('test')(dispatchMock)).toEqual({ type: 'FAVOURITE_LINE', line: 'test' });
+  const mockFn = jest.fn();
+  await fetchLines('test')(mockFn);
+  const calls = mockFn.mock.calls[ 0 ][ 0 ];
+  expect(calls).toEqual({ lines: { data: { test: 'data' }, ok: true }, type: 'SET_TFL_LINES' });
 });
 
-test.only('getLineInfo', async () => {
-  const res = await getLineInfo('test')(dispatchMock);
-  console.log('********')
-  console.log(res)
-  expect().toEqual({ type: 'FAVOURITE_LINE', line: 'test' });
+test('getLineInfo', async () => {
+  const mockFn = jest.fn();
+  await getLineInfo('test')(mockFn);
+  const calls = mockFn.mock.calls[ 0 ][ 0 ];
+  expect(calls).toEqual({ type: 'SET_TFL_LINE_INFO', line: undefined });
 });

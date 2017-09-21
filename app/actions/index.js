@@ -23,9 +23,8 @@ export const fetchLines = () => {
 export const getLineInfo = id => {
   return async dispatch => {
     console.log('Get line info');
+    console.log(dispatch)
     const data = await fetch(`https://api.tfl.gov.uk/Line/${id}/Status?detail=true&app_id=${TFL_APP_ID}&app_key=${TFL_API_KEY}`).then(x => x.json());
-    console.log('AAAAAAAAA')
-    console.log(data)
     dispatch({ type: 'SET_TFL_LINE_INFO', line: data[0] });
   };
 };
