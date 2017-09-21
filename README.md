@@ -3,7 +3,7 @@
 This project was bootstrapped (and then ejected) with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
 ### Get started
-Run `yarn install && npm start` in terminal.
+Run `yarn install` and then `npm start` in terminal.
 
 ### Troubleshooting
 Run `npm run newclear` to remove React Native's cache and reinstall node-modules. This can often help. 
