@@ -3,10 +3,16 @@ import React, { Component, } from 'react';
 import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { fetchLines } from '../actions';
+import { fetchLines, favouriteLine } from '../actions';
 import LinesList from '../components/LinesList';
 
 class App extends Component {
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: 'London Transport App'
+    }
+  };
+
   componentDidMount() {
     const { fetchLines } = this.props.actions;
     fetchLines();
@@ -37,7 +43,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const mapDispatchToProps = dispatch => ({ actions: bindActionCreators({ fetchLines }, dispatch) });
+const mapDispatchToProps = dispatch => ({ actions: bindActionCreators({ fetchLines, favouriteLine }, dispatch) });
 const mapStateToProps = state => ({ ...state });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

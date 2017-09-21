@@ -2,6 +2,8 @@ import Config from 'react-native-config';
 
 const { TFL_APP_ID, TFL_API_KEY } = Config;
 
+export const favouriteLine = line => ({ type: 'FAVOURITE_LINE', line });
+
 export const fetchLines = () => {
   return async dispatch => {
     // TODO: Put the url into a constants
@@ -12,7 +14,7 @@ export const fetchLines = () => {
 
 export const getLineInfo = id => {
   return async dispatch => {
-    console.log('Get line info')
+    console.log('Get line info');
     dispatch({ type: 'SET_TFL_LINE_INFO', line: data });
   };
 };

@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import tflLines from './tflLines';
 import tflLineInfo from './tflLineInfo';
 import router from './router';
-import { addNavigationHelpers } from 'react-navigation';
+import favouriteLines from './favouriteLine';
 
 export const sortReducers = red =>
   Object.keys(red).sort().reduce((acc, r) => ({ ...acc, [r]: red[ r ] }), {}); // Sort reducers alphabetically for dev
@@ -10,6 +10,7 @@ export const sortReducers = red =>
 const reducers = {
   tflLines,
   tflLineInfo,
+  favouriteLines,
   nav: router,
 };
 

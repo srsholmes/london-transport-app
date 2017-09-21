@@ -1,14 +1,8 @@
 import { AppNavigator } from '../routers/main';
 
-const firstAction = AppNavigator.router.getActionForPathAndParams('Home');
-const tempNavState = AppNavigator.router.getStateForAction(firstAction);
+const initialState = AppNavigator.router.getStateForAction(AppNavigator.router.getActionForPathAndParams('Home'));
 
-const initialNavState = AppNavigator.router.getStateForAction(
-  firstAction,
-  tempNavState,
-);
-
-const router = (state = initialNavState, action) => {
+const router = (state = initialState, action) => {
   const nextState = AppNavigator.router.getStateForAction(action, state);
   return nextState || state;
 };

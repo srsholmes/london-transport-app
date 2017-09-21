@@ -9,8 +9,7 @@ export const AppNavigator = StackNavigator({
   Home: { screen: Home },
   LineInfo: { screen: LineInfo },
 }, {
-  initialRouteName: 'Home',
-  headerMode: 'none',
+  initialRouteName: 'Home'
 });
 
 

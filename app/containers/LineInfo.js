@@ -19,12 +19,15 @@ class LineInfo extends Component {
     const { index } = nav;
     const { params } = nav.routes[ index ];
 
-    return (
-      <View style={styles.container}>
-        <Text>{params.line.name} Line</Text>
-        <Text>{params.line.id}</Text>
-      </View>
-    );
+    if (params) {
+      return (
+        <View style={styles.container}>
+          <Text>{params.line.name} Line</Text>
+          <Text>{params.line.id}</Text>
+        </View>
+      );
+    }
+    return null;
   }
 }
 
