@@ -9,19 +9,22 @@ type ListItemProps = {
   item: { key: string }
 }
 
-type LinesListProps = {
+type Props = {
+  actions: {
+    getStations: Function,
+    fetchLines: Function,
+    setInitialFavourites: Function,
+    getLineInfo: Function
+  },
+  tflLines: Array<{ name: string }>,
+  item: { id: string, key: string, name: string },
+  navigation: { state: { params: { line: { name: string, id: string } } } },
   tflLineInfo: {
     lineStatuses: Array<{ statusSeverityDescription: string }>,
     disruptions: Array<string>,
     stations: Array<any>,
   },
-  tflLines: Array<{ name: string }>,
-  item: { id: string, key: string, name: string },
-  navigation: { state: { params: { line: { id: string }} } },
-  favouriteLines: Array<string>,
-  actions: {
-    getStations: Function
-  }
+  favouriteLines: Array<string>
 }
 
 const ListItem = (props: ListItemProps) => {
@@ -40,7 +43,7 @@ const ListItem = (props: ListItemProps) => {
   );
 };
 
-const StationsList = (props: LinesListProps) => {
+const StationsList = (props: Props) => {
   const { tflLineInfo, navigation } = props;
   const { getStations } = props.actions;
   const { stations } = tflLineInfo;
