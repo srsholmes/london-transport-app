@@ -51,13 +51,10 @@ class LineInfo extends Component {
         <View style={styles.container}>
           <Text
             style={styles.heading}>{`Current service: ${hasInfo && tflLineInfo.lineStatuses[ 0 ].statusSeverityDescription}`}</Text>
+          {hasInfo ? <DisruptionInfo info={tflLineInfo}/> : <ActivityIndicator style={styles.loader}/>}
           {
-            hasInfo
-              ? <DisruptionInfo info={tflLineInfo}/>
-              : <ActivityIndicator style={styles.loader}/>
-          }
-          {
-            stations ?
+            stations
+              ?
               <FlatList
                 ItemSeparatorComponent={() => (
                   <View style={{ height: 1, width: '100%', backgroundColor: '#CED0CE' }}/>)}
@@ -65,7 +62,8 @@ class LineInfo extends Component {
                 style={styles.stationList}
                 renderItem={x => <ListItem containerStyle={{ borderBottomWidth: 0 }} nav={navigation} {...x}/>}
               />
-              : <Button
+              :
+              <Button
                 onPress={() => getStations(params.line.id)}
                 style={styles.button}
                 title={`Show ${params.line.name} Line Stations`}
