@@ -16,7 +16,7 @@ const ListItem = props => {
       </View>
       <View style={styles.right}>
         <TouchableOpacity style={styles.iconContainer} onPress={() => favouriteLine(item.key)}>
-          <Icon name="star" size={30} color={favouriteLines.includes(item.name) ? '#ffe100' : '#727272'}/>
+          <Icon name="star" size={25} color={favouriteLines.includes(item.name) ? '#ffe100' : '#727272'}/>
         </TouchableOpacity>
         <TouchableOpacity style={styles.iconContainer} onPress={() => nav.navigate('LineInfo', { line: item })}>
           <Icon name="chevron-small-right" size={30} color="#727272"/>
@@ -36,6 +36,7 @@ const LinesList = (props) => {
     <View>
       <FlatList
         data={lines.map(x => ({ key: x.name, ...x }))}
+        ItemSeparatorComponent={() => (<View style={{ height: 1, width: '100%', backgroundColor: '#CED0CE' }}/>)}
         renderItem={x =>
           <ListItem
             {...x}

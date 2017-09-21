@@ -28,9 +28,6 @@ class StationInfo extends Component {
     if (params) {
       return (
         <View style={styles.container}>
-          <Text>{station.commonName}</Text>
-          <Text>{station.lat}</Text>
-          <Text>{station.lon}</Text>
           {
             station.lat && station.lon && this.state.loaded
               ? <MapView

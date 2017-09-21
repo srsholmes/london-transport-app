@@ -1,9 +1,10 @@
 // @flow
 import React, { Component, } from 'react';
-import { StyleSheet, Text, FlatList, View, ActivityIndicator, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, Button, FlatList, View, ActivityIndicator, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getLineInfo, getStations } from '../actions';
+import Icon from 'react-native-vector-icons/Entypo';
 
 const DisruptionInfo = ({ info }) => {
   return info.disruptions.length
@@ -20,7 +21,7 @@ const ListItem = props => {
           <Text style={styles.name}>{item.key}</Text>
         </View>
         <View style={styles.right}>
-          <Text>Right</Text>
+          <Icon name="chevron-small-right" size={30} color="#727272"/>
         </View>
       </View>
     </TouchableOpacity>
@@ -48,19 +49,26 @@ class LineInfo extends Component {
     if (params) {
       return (
         <View style={styles.container}>
-          <Text>{hasInfo && tflLineInfo.lineStatuses[ 0 ].statusSeverityDescription}</Text>
+          <Text
+            style={styles.heading}>{`Current service: ${hasInfo && tflLineInfo.lineStatuses[ 0 ].statusSeverityDescription}`}</Text>
           {
             hasInfo
               ? <DisruptionInfo info={tflLineInfo}/>
               : <ActivityIndicator style={styles.loader}/>
           }
-          <TouchableOpacity onPress={() => getStations(params.line.id)} style={styles.button}>
-            <Text>Show Stations</Text>
-          </TouchableOpacity>
+          <Button
+            onPress={() => getStations(params.line.id)}
+            style={styles.button}
+            title={`Show ${params.line.name} Line Stations`}
+            color="#841584"
+            accessibilityLabel="Learn more about this purple button"
+          />
           {
             stations && <FlatList
+              ItemSeparatorComponent={() => (<View style={{ height: 1, width: '100%', backgroundColor: '#CED0CE' }}/>)}
               data={stations.map(x => ({ key: x.commonName, ...x }))}
-              renderItem={x => <ListItem nav={navigation} {...x}/>}
+              style={styles.stationList}
+              renderItem={x => <ListItem containerStyle={{ borderBottomWidth: 0 }} nav={navigation} {...x}/>}
             />
           }
         </View>
@@ -71,14 +79,28 @@ class LineInfo extends Component {
 }
 
 const styles = StyleSheet.create({
+  stationList: {
+    paddingBottom: 300,
+  },
+  heading: {
+    fontSize: 25,
+  },
   container: {
     backgroundColor: '#fff',
-    paddingTop: 20,
+    padding: 10,
     flexDirection: 'column',
   },
-  left: {
-    flexDirection: 'row',
+  listItemContainer: {
+    paddingTop: 10,
     flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    height: 44,
+  },
+  left: {
+    paddingTop: 5,
+    flexDirection: 'row',
+    flex: 9,
     justifyContent: 'flex-start',
   },
   right: {
@@ -96,7 +118,12 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   button: {
-    backgroundColor: 'red',
+    height: 50,
+    padding: 20,
+    marginTop: 20,
+  },
+  buttonText: {
+    textAlign: 'center',
     height: 50,
     padding: 20,
   },
