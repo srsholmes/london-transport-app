@@ -21,6 +21,7 @@ class App extends Component {
 
   render() {
     const { tflLines } = this.props;
+    console.log({ tflLines });
     return (
       <View style={styles.container}>
         {

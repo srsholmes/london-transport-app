@@ -6,8 +6,12 @@ import configureStore from './app/store';
 import AppWithNavigationState from './app/routers/main';
 import { AsyncStorage } from 'react-native';
 import { setInitialFavourites } from './app/actions';
+import Tracking from './app/middleware/tracking';
 
 const store = configureStore({});
+
+// Init the tracking.
+Tracking.init(store);
 
 export default class App extends Component {
   async componentWillMount() {

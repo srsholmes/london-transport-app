@@ -18,8 +18,8 @@ class StationInfo extends Component {
   };
 
   componentDidMount() {
-    InteractionManager.runAfterInteractions(() => this.setState({ loaded: true }));
     // Wait till scene transitioned before showing map for performance.
+    InteractionManager.runAfterInteractions(() => this.setState({ loaded: true }));
   }
 
   render() {

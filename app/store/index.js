@@ -4,6 +4,7 @@ import { applyMiddleware, createStore } from 'redux';
 import createReducer from '../reducers';
 import storage from '../middleware/storage'
 import promise from '../middleware/promise';
+import Tracking from '../middleware/tracking';
 
 const composeEnhancers = composeWithDevTools({
   realtime: true,
@@ -16,7 +17,7 @@ export default function configureStore(initialState = {}): any {
     createReducer(),
     initialState,
     composeEnhancers(
-      applyMiddleware(thunk, promise),
+      applyMiddleware(thunk, promise, Tracking.trackingMiddleware),
       storage(), // Saves the state to the phone, on every action. Useful for starting the app in the same state as before if needed.
     ),
   );
