@@ -21,7 +21,6 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(getLocale());
     return (
       <Provider store={store}>
         <View style={{ flex: 1 }}>

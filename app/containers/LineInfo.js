@@ -56,20 +56,22 @@ class LineInfo extends Component {
               ? <DisruptionInfo info={tflLineInfo}/>
               : <ActivityIndicator style={styles.loader}/>
           }
-          <Button
-            onPress={() => getStations(params.line.id)}
-            style={styles.button}
-            title={`Show ${params.line.name} Line Stations`}
-            color="#841584"
-            accessibilityLabel="Learn more about this purple button"
-          />
           {
-            stations && <FlatList
-              ItemSeparatorComponent={() => (<View style={{ height: 1, width: '100%', backgroundColor: '#CED0CE' }}/>)}
-              data={stations.map(x => ({ key: x.commonName, ...x }))}
-              style={styles.stationList}
-              renderItem={x => <ListItem containerStyle={{ borderBottomWidth: 0 }} nav={navigation} {...x}/>}
-            />
+            stations ?
+              <FlatList
+                ItemSeparatorComponent={() => (
+                  <View style={{ height: 1, width: '100%', backgroundColor: '#CED0CE' }}/>)}
+                data={stations.map(x => ({ key: x.commonName, ...x }))}
+                style={styles.stationList}
+                renderItem={x => <ListItem containerStyle={{ borderBottomWidth: 0 }} nav={navigation} {...x}/>}
+              />
+              : <Button
+                onPress={() => getStations(params.line.id)}
+                style={styles.button}
+                title={`Show ${params.line.name} Line Stations`}
+                color="#841584"
+                accessibilityLabel="Learn more about this purple button"
+              />
           }
         </View>
       );

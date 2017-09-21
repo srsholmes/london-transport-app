@@ -6,7 +6,6 @@ import {
   getLineInfo,
 } from './';
 
-
 test('favouriteLine', () => {
   expect(favouriteLine('test')).toEqual({ type: 'FAVOURITE_LINE', line: 'test' });
 });
