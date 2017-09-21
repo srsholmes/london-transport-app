@@ -1,11 +1,16 @@
 // @flow
 import React, { Component, } from 'react';
-import { StyleSheet, Text, FlatList, View, ActivityIndicator, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, InteractionManager } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getLineInfo, getStations } from '../actions';
+import MapView from 'react-native-maps';
 
 class StationInfo extends Component {
+  state = {
+    loaded: false,
+  };
+
   static navigationOptions = ({ navigation }) => {
     return {
       title: navigation.state.params.station.commonName,
@@ -13,8 +18,8 @@ class StationInfo extends Component {
   };
 
   componentDidMount() {
-    const { params } = this.props.navigation.state;
-    console.log('CDM');
+    InteractionManager.runAfterInteractions(() => this.setState({ loaded: true }));
+    // Wait till scene transitioned before showing map for performance.
   }
 
   render() {
@@ -26,6 +31,24 @@ class StationInfo extends Component {
           <Text>{station.commonName}</Text>
           <Text>{station.lat}</Text>
           <Text>{station.lon}</Text>
+          {
+            station.lat && station.lon && this.state.loaded
+              ? <MapView
+                style={styles.map}
+                initialRegion={{
+                  latitude: station.lat,
+                  longitude: station.lon,
+                  latitudeDelta: 0.0922,
+                  longitudeDelta: 0.0421,
+                }}
+              >
+                <MapView.Marker
+                  coordinate={{ latitude: station.lat, longitude: station.lon }}
+                  title={station.commonName}
+                />
+              </MapView>
+              : <Text>Sorry, the station location currently is unavailable.</Text>
+          }
         </View>
       );
     }
@@ -35,34 +58,21 @@ class StationInfo extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fff',
-    paddingTop: 20,
-    flexDirection: 'column',
-  },
-  left: {
-    flexDirection: 'row',
-    flex: 1,
-    justifyContent: 'flex-start',
-  },
-  right: {
-    flexDirection: 'row',
-    flex: 1,
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
     justifyContent: 'flex-end',
+    alignItems: 'center',
   },
-  item: {
-    padding: 10,
-    height: 44,
-    textAlign: 'left',
-  },
-  loader: {
-    paddingTop: 20,
-    paddingBottom: 20,
-  },
-  button: {
-    backgroundColor: 'red',
-    height: 50,
-    padding: 20,
-  },
+  map: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+  }
 });
 
 const mapDispatchToProps = dispatch => ({ actions: bindActionCreators({ getLineInfo, getStations }, dispatch) });

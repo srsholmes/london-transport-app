@@ -12,20 +12,18 @@ const DisruptionInfo = ({ info }) => {
 };
 
 const ListItem = props => {
-  const { nav, item, favouriteLine } = props;
+  const { nav, item } = props;
   return (
-    <View style={styles.listItemContainer}>
-      <View style={styles.left}>
-        <TouchableOpacity onPress={() => nav.navigate('StationInfo', { station: item })}>
+    <TouchableOpacity onPress={() => nav.navigate('StationInfo', { station: item })}>
+      <View style={styles.listItemContainer}>
+        <View style={styles.left}>
           <Text style={styles.name}>{item.key}</Text>
-        </TouchableOpacity>
-      </View>
-      <View style={styles.right}>
-        <TouchableOpacity style={styles.iconContainer} onPress={() => nav.navigate('StationInfo', { station: item })}>
+        </View>
+        <View style={styles.right}>
           <Text>Right</Text>
-        </TouchableOpacity>
+        </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -50,7 +48,6 @@ class LineInfo extends Component {
     if (params) {
       return (
         <View style={styles.container}>
-          <Text>{params.line.name} Line</Text>
           <Text>{hasInfo && tflLineInfo.lineStatuses[ 0 ].statusSeverityDescription}</Text>
           {
             hasInfo

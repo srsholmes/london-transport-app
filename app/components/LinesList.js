@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { FlatList, StyleSheet, Text, View, TouchableOpacity, Platform } from 'react-native';
 
 
