@@ -5,6 +5,16 @@ This project was bootstrapped (and then ejected) with [Create React Native App](
 ### Get started
 Run `yarn install && npm start` in terminal.
 
+### Troubleshooting
+Run `npm run newclear` to remove React Native's cache and reinstall node-modules. This can often help. 
+
+#### Tests
+Run `npm t`. Tests are run with Jest, which will work both locally and on CI.
+Current only tests for actions are in place due to time constraints. For component testing I would use Enzyme.
+
+#### Ci
+A sample CircleCi config can be found in circle.yml. This will run CI on Circle, but unfortunately I cannot fully test as the OSX build environment (needed to make the project) is expensive, but I have previous experience in using Circle this way. 
+ 
 #### Analytics
 I have provided some middleware which can be found in `./app/middleware/tracking`. This code is initialised on the app start and is run every time an action causes a change in state in the app. There is an object there called `TRACKING` inside the middleware. The keys of this object are used as a look up to actions which we want to track. As I am using redux as part of my state management, I am  assuming that for any action that would like to be tracked, we can dispatch an event for, or hook into the apps existing events. At the moment currently it console logs the event, but this can be integrated into third party tracking libraries etc. 
 
@@ -17,3 +27,8 @@ documentation and how often / well the package is maintained. A great tool for t
 I would detect the device locale on app start up using [react-native-device-info](https://github.com/rebeccahughes/react-native-device-info) and set the language accordingly. 
 
 #### Considerations before deploying to app stores.
+
+- Accessibility of components.
+- Do the tests pass (presumably the feature would not be merged if tests fail / app would not be released).
+- Update screenshots.
+- Changelog of features / bug fixes.
