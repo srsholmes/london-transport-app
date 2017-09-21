@@ -4,10 +4,12 @@ import { addNavigationHelpers, StackNavigator } from 'react-navigation';
 
 import Home from '../containers/Home';
 import LineInfo from '../containers/LineInfo';
+import StationInfo from '../containers/StationInfo';
 
 export const AppNavigator = StackNavigator({
   Home: { screen: Home },
   LineInfo: { screen: LineInfo },
+  StationInfo: { screen: StationInfo },
 }, {
   initialRouteName: 'Home'
 });

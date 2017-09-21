@@ -6,8 +6,6 @@ const pick = (obj, arr) => {
 
 const saveState = key => async state => {
   const stateToSave = pick(state, [ 'favouriteLines' ]);
-  console.log('*************');
-  console.log(stateToSave);
   await AsyncStorage.setItem(key, JSON.stringify(stateToSave));
 };
 
@@ -16,7 +14,6 @@ export default function () {
     const store = next(reducer, initialState);
     store.subscribe(async () => {
       const state = store.getState();
-      console.log('STATE', state);
       const saver = saveState('TransportApp');
       saver(state);
     });

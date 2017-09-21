@@ -25,7 +25,6 @@ const ListItem = props => {
 
 const LinesList = (props) => {
   const { favouriteLines, tflLines } = props;
-  console.log({ favouriteLines, tflLines });
   const lines = [
     ...favouriteLines.sort().map(x => tflLines.find(y => y.name === x)),
     ...tflLines.filter(x => favouriteLines.includes(x.name) === false)
