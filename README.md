@@ -11,6 +11,9 @@ Run `npm run newclear` to remove React Native's cache and reinstall node-modules
 ### Flow
 Run `npm run flow`. The source isn't entirely annotated due to time constraints, but I have gone through the majority of it. 
 
+#### User Flows
+Basic User flows can be seen on the png `user-flows.png`.
+
 #### Tests
 Run `npm t`. Tests are run with Jest, which will work both locally and on CI.
 Current only tests for actions are in place due to time constraints. For component testing I would use Enzyme.
@@ -31,6 +34,7 @@ I would detect the device locale on app start up using [react-native-device-info
 
 #### Considerations before deploying to app stores.
 
+- Check the build numbers are correct, once a build is uploaded, it cannot be 'downgraded'.
 - Accessibility of components.
 - Do the tests pass (presumably the feature would not be merged if tests fail / app would not be released).
 - Update screenshots.
