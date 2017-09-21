@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, NativeModules, Platform } from 'react-native';
 import { Provider } from 'react-redux';
 import configureStore from './app/store';
 import AppWithNavigationState from './app/routers/main';
@@ -17,9 +17,11 @@ export default class App extends Component {
   async componentWillMount() {
     const res = await AsyncStorage.getItem('TransportApp');
     const { favouriteLines } = JSON.parse(res);
-    favouriteLines.length && store.dispatch(setInitialFavourites(favouriteLines))
+    favouriteLines.length && store.dispatch(setInitialFavourites(favouriteLines));
   }
+
   render() {
+    console.log(getLocale());
     return (
       <Provider store={store}>
         <View style={{ flex: 1 }}>

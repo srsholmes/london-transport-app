@@ -79,9 +79,7 @@ class LineInfo extends Component {
 }
 
 const styles = StyleSheet.create({
-  stationList: {
-    paddingBottom: 300,
-  },
+  stationList: {},
   heading: {
     fontSize: 25,
   },

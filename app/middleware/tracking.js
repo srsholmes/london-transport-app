@@ -21,7 +21,6 @@ export const trackingMiddleware = store => next => action => {
   if (Object.keys(TRACKING).includes(action.type)) {
     TRACKING[ action.type ].forEach(fn => fn(action, state));
   }
-
   return next(action);
 };
 
