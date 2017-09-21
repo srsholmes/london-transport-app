@@ -4,6 +4,8 @@ const { TFL_APP_ID, TFL_API_KEY } = Config;
 
 export const favouriteLine = line => ({ type: 'FAVOURITE_LINE', line });
 
+export const setInitialFavourites = lines => ({ type: 'SET_INITIAL_FAVOURITE_LINES', lines });
+
 export const fetchLines = () => {
   return async dispatch => {
     // TODO: Put the url into a constants

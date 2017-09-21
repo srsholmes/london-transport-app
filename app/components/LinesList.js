@@ -3,7 +3,6 @@ import { FlatList, StyleSheet, Text, View, TouchableOpacity, Platform } from 're
 
 
 const ListItem = props => {
-  console.log(props);
   const { nav, item, favouriteLine } = props;
   return (
     <View style={styles.listItemContainer}>
@@ -24,19 +23,16 @@ const ListItem = props => {
   );
 };
 
-const sortFaves = faves => (a, b) => {
-  if (faves.includes(a.name)) return -1;
-  if (faves.includes(a.name) && faves.includes(b.name)) return 0;
-  return 1;
-};
-
 const LinesList = (props) => {
-  const { favouriteLines } = props;
-  // Get other lines, then concat the other onto the fave
+  const { favouriteLines, tflLines } = props;
+  const lines = [
+    ...favouriteLines.map(x => tflLines.find(y => y.name === x)),
+    ...tflLines.filter(x => favouriteLines.includes(x.name) === false)
+  ];
   return (
     <View>
       <FlatList
-        data={props.tflLines.sort(sortFaves(favouriteLines)).map(x => ({ key: x.name, ...x }))}
+        data={lines.map(x => ({ key: x.name, ...x }))}
         renderItem={x => <ListItem {...x} favouriteLine={props.actions.favouriteLine} nav={props.navigation}/>}
       />
     </View>

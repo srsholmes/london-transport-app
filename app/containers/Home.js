@@ -3,14 +3,15 @@ import React, { Component, } from 'react';
 import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { fetchLines, favouriteLine } from '../actions';
+import { fetchLines, favouriteLine, setInitialFavourites } from '../actions';
 import LinesList from '../components/LinesList';
+
 
 class App extends Component {
   static navigationOptions = ({ navigation }) => {
     return {
-      title: 'London Transport App'
-    }
+      title: 'London Transport App',
+    };
   };
 
   componentDidMount() {
@@ -43,7 +44,13 @@ const styles = StyleSheet.create({
   },
 });
 
-const mapDispatchToProps = dispatch => ({ actions: bindActionCreators({ fetchLines, favouriteLine }, dispatch) });
+const mapDispatchToProps = dispatch => ({
+  actions: bindActionCreators({
+    fetchLines,
+    favouriteLine,
+    setInitialFavourites,
+  }, dispatch),
+});
 const mapStateToProps = state => ({ ...state });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

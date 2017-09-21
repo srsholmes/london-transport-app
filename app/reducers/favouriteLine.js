@@ -5,6 +5,8 @@ export default function favouriteLines(state = [], action) {
         return state.filter(x => !action.line);
       }
       return state.length ? [ ...state, action.line ] : [ action.line ];
+    case 'SET_INITIAL_FAVOURITE_LINES':
+      return state.concat(action.lines);
     default:
       return state;
   }

@@ -4,13 +4,18 @@ import { View } from 'react-native';
 import { Provider } from 'react-redux';
 import configureStore from './app/store';
 import AppWithNavigationState from './app/routers/main';
+import { AsyncStorage } from 'react-native';
+import { setInitialFavourites } from './app/actions';
 
 const store = configureStore({});
 
-
 export default class App extends Component {
+  async componentWillMount() {
+    const res = await AsyncStorage.getItem('TransportApp');
+    const { favouriteLines } = JSON.parse(res);
+    favouriteLines.length && store.dispatch(setInitialFavourites(favouriteLines))
+  }
   render() {
-    console.log('App render');
     return (
       <Provider store={store}>
         <View style={{ flex: 1 }}>

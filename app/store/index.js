@@ -17,7 +17,7 @@ export default function configureStore(initialState = {}): any {
     initialState,
     composeEnhancers(
       applyMiddleware(thunk, promise),
-      //storage(), // Saves the state to the phone, on every action. Useful for starting the app in the same state as before if needed.
+      storage(), // Saves the state to the phone, on every action. Useful for starting the app in the same state as before if needed.
     ),
   );
 
