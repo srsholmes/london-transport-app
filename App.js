@@ -14,7 +14,7 @@ const store = configureStore({});
 Tracking.init(store);
 
 export default class App extends Component {
-  async componentWillMount() {
+  async componentWillMount(): any {
     const res = await AsyncStorage.getItem('TransportApp');
     const { favouriteLines } = JSON.parse(res);
     favouriteLines.length && store.dispatch(setInitialFavourites(favouriteLines));

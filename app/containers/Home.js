@@ -1,4 +1,3 @@
-// @flow
 import React, { Component, } from 'react';
 import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
 import { connect } from 'react-redux';
@@ -52,6 +51,7 @@ const mapDispatchToProps = dispatch => ({
     setInitialFavourites,
   }, dispatch),
 });
+
 const mapStateToProps = state => ({ ...state });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
