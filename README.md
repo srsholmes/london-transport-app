@@ -6,13 +6,10 @@ This project was bootstrapped (and then ejected) with [Create React Native App](
 Run `yarn install` and then `npm start` in terminal.
 
 ### Troubleshooting
-Run `npm run newclear` to remove React Native's cache and reinstall node-modules. This can often help. 
+Run `npm run newclear` to remove React Native's cache and reinstall node-modules. This can often help with problems in the simulator. Also first load seems to be quite slow, so be patient please. 
 
 ### Flow
 Run `npm run flow`. The source isn't entirely annotated due to time constraints, but I have gone through the majority of it. 
-
-#### User Flows
-Basic User flows can be seen on the png `user-flows.png`.
 
 #### Tests
 Run `npm t`. Tests are run with Jest, which will work both locally and on CI.
@@ -41,3 +38,6 @@ I would detect the device locale on app start up using [react-native-device-info
 - Update screenshots.
 - Changelog of features / bug fixes.
 - A whole load of others I have forgotton (it's a painful process). 
+
+#### User Flows
+Basic User flows can be seen on the png `user-flows.png`.
