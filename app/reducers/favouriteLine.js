@@ -1,4 +1,10 @@
-export default function favouriteLines(state = [], action) {
+// @flow
+
+type Action =
+  | { type: 'FAVOURITE_LINE', stations: any, line: string }
+  | { type: 'SET_INITIAL_FAVOURITE_LINES', lines: Array<string>, line: string }
+
+export default function favouriteLines(state: Array<string> = [], action: Action) {
   switch (action.type) {
     case 'FAVOURITE_LINE':
       if (state.includes(action.line)) {

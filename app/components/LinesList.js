@@ -1,8 +1,9 @@
+
+
 import React from 'react';
 import { FlatList, StyleSheet, Text, View, TouchableOpacity, Platform } from 'react-native';
 import Icon from 'react-native-vector-icons/Entypo';
 import { tflColors } from '../themes';
-
 
 const ListItem = props => {
   const { nav, item, favouriteLine, favouriteLines } = props;
