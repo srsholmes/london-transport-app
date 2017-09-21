@@ -1,7 +1,6 @@
 // @flow
 
-type Action =
-  | { type: 'SET_TFL_LINES', lines: Array<string> }
+import type { Action } from '../types/Action';
 
 export default function tflLines(state: Array<string> = [], action: Action) {
   switch (action.type) {

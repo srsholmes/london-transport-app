@@ -1,11 +1,26 @@
-
+/* @flow */
 
 import React from 'react';
 import { FlatList, StyleSheet, Text, View, TouchableOpacity, Platform } from 'react-native';
 import Icon from 'react-native-vector-icons/Entypo';
 import { tflColors } from '../themes';
 
-const ListItem = props => {
+type ListItemProps = {
+  nav: { navigate: Function },
+  item: { id: string, key: string, name: string },
+  favouriteLine: Function,
+  favouriteLines: Array<string>
+}
+
+type LinesListProps = {
+  tflLines: Array<{ name: string }>,
+  item: { id: string, key: string, name: string },
+  navigation: {},
+  favouriteLines: Array<string>,
+  actions: { favouriteLine: Function }
+}
+
+const ListItem = (props: ListItemProps) => {
   const { nav, item, favouriteLine, favouriteLines } = props;
   return (
     <View style={styles.listItemContainer}>
@@ -27,8 +42,8 @@ const ListItem = props => {
   );
 };
 
-const LinesList = (props) => {
-  const { favouriteLines, tflLines } = props;
+const LinesList = (props: LinesListProps) => {
+  const { favouriteLines, tflLines, navigation } = props;
   const lines = [
     ...favouriteLines.sort().map(x => tflLines.find(y => y.name === x)),
     ...tflLines.filter(x => favouriteLines.includes(x.name) === false)
@@ -43,7 +58,7 @@ const LinesList = (props) => {
             {...x}
             favouriteLines={favouriteLines}
             favouriteLine={props.actions.favouriteLine}
-            nav={props.navigation}
+            nav={navigation}
           />}
       />
     </View>

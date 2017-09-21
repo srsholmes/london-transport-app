@@ -1,10 +1,8 @@
 // @flow
 
-type Action =
-  | { type: 'SET_TFL_LINE_INFO', line: string }
-  | { type: 'SET_TFL_STATIONS', stations: Array<string>, line: any }
+import type { Action } from '../types/Action';
 
-export default function tflLines(state: any = {}, action: Action) {
+export default function tflLines(state: {} = {}, action: Action) {
   switch (action.type) {
     case 'SET_TFL_LINE_INFO':
       return { ...action.line };

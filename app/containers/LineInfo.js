@@ -1,33 +1,44 @@
+/* @flow */
+
 import React, { Component, } from 'react';
 import { StyleSheet, Text, Button, FlatList, View, ActivityIndicator, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getLineInfo, getStations } from '../actions';
-import Icon from 'react-native-vector-icons/Entypo';
+import StationsList from '../components/StationsList';
+import type { Connector } from 'react-redux';
+import type { Dispatch } from '../types/Store';
+import type { State } from '../types/State';
 
-const DisruptionInfo = ({ info }) => {
+type DisruptionProps = {
+  info: { disruptions: Array<string> }
+}
+
+type Props = {
+  actions: {
+    getStations: Function,
+    fetchLines: Function,
+    setInitialFavourites: Function,
+    getLineInfo: Function
+  },
+  tflLines: Array<{ name: string }>,
+  item: { id: string, key: string, name: string },
+  navigation: { state: { params: { line: { name: string, id: string } } } },
+  tflLineInfo: {
+    lineStatuses: Array<{ statusSeverityDescription: string }>,
+    disruptions: Array<string>,
+    stations: Array<any>,
+  },
+  favouriteLines: Array<string>
+}
+
+const DisruptionInfo = ({ info }: DisruptionProps) => {
   return info.disruptions.length
     ? (<View>{info.disruptions.map(x => <Text>{x}</Text>)}</View>)
     : (<Text>No Disruptions</Text>);
 };
 
-const ListItem = props => {
-  const { nav, item } = props;
-  return (
-    <TouchableOpacity onPress={() => nav.navigate('StationInfo', { station: item })}>
-      <View style={styles.listItemContainer}>
-        <View style={styles.left}>
-          <Text style={styles.name}>{item.key}</Text>
-        </View>
-        <View style={styles.right}>
-          <Icon name="chevron-small-right" size={30} color="#727272"/>
-        </View>
-      </View>
-    </TouchableOpacity>
-  );
-};
-
-class LineInfo extends Component {
+class LineInfo extends Component<void, Props, void> {
   static navigationOptions = ({ navigation }) => {
     return {
       title: `${navigation.state.params.line.key} Line`,
@@ -40,36 +51,23 @@ class LineInfo extends Component {
   }
 
   render() {
-    const { tflLineInfo, navigation } = this.props;
-    const { getStations } = this.props.actions;
-    const { stations } = tflLineInfo;
+    const { tflLineInfo } = this.props;
     const hasInfo = Object.keys(tflLineInfo).length;
     const { params } = this.props.navigation.state;
     if (params) {
       return (
         <View style={styles.container}>
-          <Text
-            style={styles.heading}>{`Current service: ${hasInfo && tflLineInfo.lineStatuses[ 0 ].statusSeverityDescription}`}</Text>
-          {hasInfo ? <DisruptionInfo info={tflLineInfo}/> : <ActivityIndicator style={styles.loader}/>}
           {
-            stations
-              ?
-              <FlatList
-                ItemSeparatorComponent={() => (
-                  <View style={{ height: 1, width: '100%', backgroundColor: '#CED0CE' }}/>)}
-                data={stations.map(x => ({ key: x.commonName, ...x }))}
-                style={styles.stationList}
-                renderItem={x => <ListItem containerStyle={{ borderBottomWidth: 0 }} nav={navigation} {...x}/>}
-              />
-              :
-              <Button
-                onPress={() => getStations(params.line.id)}
-                style={styles.button}
-                title={`Show ${params.line.name} Line Stations`}
-                color="#841584"
-                accessibilityLabel="Learn more about this purple button"
-              />
+            hasInfo
+            ? <Text style={styles.heading}>{`Current service: ${tflLineInfo.lineStatuses[ 0 ].statusSeverityDescription}`}</Text>
+            : <ActivityIndicator style={styles.loader}/>
           }
+          {
+            hasInfo
+              ? <DisruptionInfo info={tflLineInfo}/>
+              : <ActivityIndicator style={styles.loader}/>
+          }
+          <StationsList { ...this.props}/>
         </View>
       );
     }
@@ -126,7 +124,19 @@ const styles = StyleSheet.create({
   },
 });
 
-const mapDispatchToProps = dispatch => ({ actions: bindActionCreators({ getLineInfo, getStations }, dispatch) });
-const mapStateToProps = state => ({ ...state });
+const mapDispatchToProps = (dispatch: Dispatch) => ({
+  actions: bindActionCreators({
+    getLineInfo,
+    getStations,
+  }, dispatch),
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(LineInfo);
+const mapStateToProps = (state: State) => ({ ...state });
+
+const connector: Connector<{}, Props> = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+);
+
+export default connector(LineInfo);
+

@@ -1,8 +1,6 @@
 // @flow
 
-type Action =
-  | { type: 'FAVOURITE_LINE', stations: any, line: string }
-  | { type: 'SET_INITIAL_FAVOURITE_LINES', lines: Array<string>, line: string }
+import type { Action } from '../types/Action';
 
 export default function favouriteLines(state: Array<string> = [], action: Action) {
   switch (action.type) {

@@ -1,11 +1,23 @@
+/* @flow */
 import React, { Component, } from 'react';
 import { StyleSheet, Text, View, InteractionManager } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getLineInfo, getStations } from '../actions';
 import MapView from 'react-native-maps';
+import type { Connector } from 'react-redux';
+import type { Dispatch } from '../types/Store';
+import type { State } from '../types/State';
 
-class StationInfo extends Component {
+type Props = {
+  navigation: { state: { params: { station: { } } } };
+}
+
+type ComponentState = {
+  loaded: boolean,
+};
+
+class StationInfo extends Component<void, Props, ComponentState> {
   state = {
     loaded: false,
   };
@@ -17,8 +29,8 @@ class StationInfo extends Component {
   };
 
   componentDidMount() {
-    // Wait till scene transitioned before showing map for performance.
     InteractionManager.runAfterInteractions(() => this.setState({ loaded: true }));
+    // Wait till scene transitioned before showing map for performance.
   }
 
   render() {
@@ -68,10 +80,15 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
-  }
+  },
 });
 
-const mapDispatchToProps = dispatch => ({ actions: bindActionCreators({ getLineInfo, getStations }, dispatch) });
-const mapStateToProps = state => ({ ...state });
+const mapDispatchToProps = (dispatch: Dispatch) => ({ actions: bindActionCreators({ getLineInfo, getStations }, dispatch) });
+const mapStateToProps = (state: State) => ({ ...state });
 
-export default connect(mapStateToProps, mapDispatchToProps)(StationInfo);
+const connector: Connector<{}, Props> = connect(
+  mapStateToProps,
+  mapDispatchToProps
+);
+
+export default connector(StationInfo);

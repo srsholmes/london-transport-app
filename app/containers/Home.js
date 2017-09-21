@@ -1,3 +1,4 @@
+/* @flow */
 import React, { Component, } from 'react';
 import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
 import { connect } from 'react-redux';
@@ -5,8 +6,24 @@ import { bindActionCreators } from 'redux';
 import { fetchLines, favouriteLine, setInitialFavourites } from '../actions';
 import LinesList from '../components/LinesList';
 
+import type { Connector } from 'react-redux';
+import type { Dispatch } from '../types/Store';
+import type { State } from '../types/State';
 
-class App extends Component {
+type Props = {
+  actions: {
+    favouriteLine: Function,
+    fetchLines: Function,
+    setInitialFavourites: Function,
+  },
+  tflLines: Array<{ name: string }>,
+  item: { id: string, key: string, name: string },
+  navigation: {},
+  favouriteLines: Array<string>
+}
+
+
+class App extends Component<void, Props, void> {
   static navigationOptions = ({ navigation }) => {
     return {
       title: 'London Transport App',
@@ -20,7 +37,6 @@ class App extends Component {
 
   render() {
     const { tflLines } = this.props;
-    console.log({ tflLines });
     return (
       <View style={styles.container}>
         {
@@ -44,7 +60,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch: Dispatch) => ({
   actions: bindActionCreators({
     fetchLines,
     favouriteLine,
@@ -52,6 +68,11 @@ const mapDispatchToProps = dispatch => ({
   }, dispatch),
 });
 
-const mapStateToProps = state => ({ ...state });
+const mapStateToProps = (state: State) => ({ ...state });
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+const connector: Connector<{}, Props> = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+);
+
+export default connector(App);
