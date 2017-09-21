@@ -1,4 +1,4 @@
-const colors = {
+export const tflColors = {
   'tfl-blue': '#1A5A92',
   'bakerloo': '#B36305',
   'central': '#E32017',

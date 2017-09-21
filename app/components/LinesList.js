@@ -1,11 +1,14 @@
 import React from 'react';
 import { FlatList, StyleSheet, Text, View, TouchableOpacity, Platform } from 'react-native';
+import Icon from 'react-native-vector-icons/Entypo';
+import { tflColors } from '../themes';
 
 
 const ListItem = props => {
-  const { nav, item, favouriteLine } = props;
+  const { nav, item, favouriteLine, favouriteLines } = props;
   return (
     <View style={styles.listItemContainer}>
+      <View style={{ width: 20, height: 45, backgroundColor: tflColors[ item.id ] }}/>
       <View style={styles.left}>
         <TouchableOpacity onPress={() => nav.navigate('LineInfo', { line: props.item })}>
           <Text style={styles.name}>{item.key}</Text>
@@ -13,10 +16,10 @@ const ListItem = props => {
       </View>
       <View style={styles.right}>
         <TouchableOpacity style={styles.iconContainer} onPress={() => favouriteLine(item.key)}>
-          <Text>Fave</Text>
+          <Icon name="star" size={30} color={favouriteLines.includes(item.name) ? '#ffe100' : '#727272'}/>
         </TouchableOpacity>
         <TouchableOpacity style={styles.iconContainer} onPress={() => nav.navigate('LineInfo', { line: item })}>
-          <Text>Right</Text>
+          <Icon name="chevron-small-right" size={30} color="#727272"/>
         </TouchableOpacity>
       </View>
     </View>
@@ -33,7 +36,13 @@ const LinesList = (props) => {
     <View>
       <FlatList
         data={lines.map(x => ({ key: x.name, ...x }))}
-        renderItem={x => <ListItem {...x} favouriteLine={props.actions.favouriteLine} nav={props.navigation}/>}
+        renderItem={x =>
+          <ListItem
+            {...x}
+            favouriteLines={favouriteLines}
+            favouriteLine={props.actions.favouriteLine}
+            nav={props.navigation}
+          />}
       />
     </View>
   );
@@ -43,9 +52,10 @@ const styles = StyleSheet.create({
   container: {
     paddingTop: 22,
   },
+  lineColor: {},
   left: {
     flexDirection: 'row',
-    flex: 1,
+    flex: 2,
     justifyContent: 'flex-start',
   },
   right: {
@@ -73,8 +83,9 @@ const styles = StyleSheet.create({
   },
   iconContainer: {
     flex: 1,
-    backgroundColor: 'green',
-    width: 37,
+    justifyContent: 'flex-end',
+    flexDirection: 'row',
+    width: 10,
     height: 37,
     borderRadius: 18,
     marginRight: 12,
