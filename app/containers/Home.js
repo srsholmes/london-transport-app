@@ -22,7 +22,6 @@ type Props = {
   favouriteLines: Array<string>
 }
 
-
 class App extends Component<void, Props, void> {
   static navigationOptions = ({ navigation }) => {
     return {

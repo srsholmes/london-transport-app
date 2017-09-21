@@ -10,7 +10,6 @@ import Tracking from './app/middleware/tracking';
 
 const store = configureStore({});
 
-// Init the tracking.
 Tracking.init(store);
 
 export default class App extends Component {

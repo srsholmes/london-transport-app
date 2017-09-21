@@ -27,8 +27,9 @@ I have provided some middleware which can be found in `./app/middleware/tracking
 The middleware also hijacks React Native's global Error handler function, which can be used record and identify errors in analytics packages such as bugsnag.  
 
 #### Localisation
-For localisation, I would research some packages such as [react-native-i18n](https://github.com/AlexanderZaytsev/react-native-i18n), [ReactNativeLocalization](https://github.com/stefalda/ReactNativeLocalization) and implement the best solution for the specific problem / use case. I would take factors into account such as package   
-documentation and how often / well the package is maintained. A great tool for this is [Is it maintained?](http://isitmaintained.com/), which will give you statistics on how well a package is maintained.
+For localisation, I would research some packages such as [react-native-i18n](https://github.com/AlexanderZaytsev/react-native-i18n), [ReactNativeLocalization](https://github.com/stefalda/ReactNativeLocalization) and implement the best solution for the specific problem / use case. I would take factors into account such as package documentation and how often / well the package is maintained. 
+
+A great tool for this is [Is it maintained?](http://isitmaintained.com/), which will give you statistics on how well a package is maintained.
 
 I would detect the device locale on app start up using [react-native-device-info](https://github.com/rebeccahughes/react-native-device-info) and set the language accordingly. 
 
@@ -39,3 +40,4 @@ I would detect the device locale on app start up using [react-native-device-info
 - Do the tests pass (presumably the feature would not be merged if tests fail / app would not be released).
 - Update screenshots.
 - Changelog of features / bug fixes.
+- A whole load of others I have forgotton (it's a painful process). 
