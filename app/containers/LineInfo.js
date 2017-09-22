@@ -11,7 +11,7 @@ import type { Dispatch } from '../types/Store';
 import type { State } from '../types/State';
 
 type DisruptionProps = {
-  info: { disruptions: Array<string> }
+  info: { disruptions: Array<{ description: string }> }
 }
 
 type Props = {
@@ -26,7 +26,7 @@ type Props = {
   navigation: { state: { params: { line: { name: string, id: string } } } },
   tflLineInfo: {
     lineStatuses: Array<{ statusSeverityDescription: string }>,
-    disruptions: Array<string>,
+    disruptions: Array<{ description: string }>,
     stations: Array<any>,
   },
   favouriteLines: Array<string>
@@ -34,7 +34,7 @@ type Props = {
 
 const DisruptionInfo = ({ info }: DisruptionProps) => {
   return info.disruptions.length
-    ? (<View>{info.disruptions.map(x => <Text>{x}</Text>)}</View>)
+    ? (<View>{info.disruptions.map(x => <Text>{x.description}</Text>)}</View>)
     : (<Text>No Disruptions</Text>);
 };
 
@@ -59,15 +59,16 @@ class LineInfo extends Component<void, Props, void> {
         <View style={styles.container}>
           {
             hasInfo
-            ? <Text style={styles.heading}>{`Current service: ${tflLineInfo.lineStatuses[ 0 ].statusSeverityDescription}`}</Text>
-            : <ActivityIndicator style={styles.loader}/>
+              ? <Text
+                style={styles.heading}>{`Current service: ${tflLineInfo.lineStatuses[ 0 ].statusSeverityDescription}`}</Text>
+              : <ActivityIndicator style={styles.loader}/>
           }
           {
             hasInfo
               ? <DisruptionInfo info={tflLineInfo}/>
               : <ActivityIndicator style={styles.loader}/>
           }
-          <StationsList { ...this.props}/>
+          <StationsList {...this.props}/>
         </View>
       );
     }

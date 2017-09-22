@@ -21,7 +21,7 @@ type Props = {
   navigation: { state: { params: { line: { name: string, id: string } } } },
   tflLineInfo: {
     lineStatuses: Array<{ statusSeverityDescription: string }>,
-    disruptions: Array<string>,
+    disruptions: Array<{ description: string }>,
     stations: Array<any>,
   },
   favouriteLines: Array<string>
