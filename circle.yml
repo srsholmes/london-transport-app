@@ -1,0 +1,18 @@
+machine:
+  xcode:
+    version: 9.0
+  environment:
+    XCODE_PROJECT: "ios/TransportApp.xcodeproj"
+    ANDROID_HOME: "/usr/local/Cellar/android-sdk/24.4.1_1"
+dependencies:
+  pre:
+    - ./prepare.sh
+  cache_directories:
+    - ~/.yarn-cache
+  override:
+    - yarn install
+test:
+  override:
+    - npm run test
+  post:
+    - npm run coverage
