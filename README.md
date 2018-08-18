@@ -5,9 +5,9 @@ This project was bootstrapped (and then ejected) with [Create React Native App](
 ### Get started
 Run `yarn install` and then `npm start` in terminal.
 
-![Screenshot1](https://github.com/srsholmes/london-transport-app/blob/develop/screenshots/01.png)
-![Screenshot2](https://github.com/srsholmes/london-transport-app/blob/develop/screenshots/02.png)
-![Screenshot3](https://github.com/srsholmes/london-transport-app/blob/develop/screenshots/03.png)
+<img src="https://github.com/srsholmes/london-transport-app/blob/develop/screenshots/01.png" alt="1" width="300px"/>
+<img src="https://github.com/srsholmes/london-transport-app/blob/develop/screenshots/02.png" alt="2" width="300px"/>
+<img src="https://github.com/srsholmes/london-transport-app/blob/develop/screenshots/03.png" alt="3" width="300px"/>
 
 ### Troubleshooting
 Run `npm run newclear` to remove React Native's cache and reinstall node-modules. This can often help with problems in the simulator. Also first load seems to be quite slow, so be patient please. 
