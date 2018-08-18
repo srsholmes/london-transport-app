@@ -2,11 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>application-identifier</key>
-	<string>YB4KW4NUXT.org.reactjs.native.example.TransportApp</string>
-	<key>keychain-access-groups</key>
-	<array>
-		<string>YB4KW4NUXT.org.reactjs.native.example.TransportApp</string>
-	</array>
+	<key>com.apple.security.get-task-allow</key>
+	<true/>
 </dict>
 </plist>
